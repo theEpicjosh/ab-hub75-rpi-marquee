@@ -41,5 +41,5 @@ To do this,
 
 3. Make sure you install the GitHub CLI (`gh`) interface by running "`curl -sS https://webi.sh/gh | sh`".
 
-4. After, type "`gh repo clone theEpicjosh/ab-hub75-rpi-marquee`" and type "`sudo ./install-abmarquee.sh`" (if that doesn't work, type `sudo chmod 755 ./install-abmarquee` and type the previous command again.)
+4. After, type "`gh repo clone theEpicjosh/ab-hub75-rpi-marquee`" and type "`sudo ./install-abmarquee.sh`" (if that doesn't work, type `sudo chmod 755 ./install-abmarquee.sh` and type the previous command again.)
 5. Follow installer directions.
