@@ -12,6 +12,7 @@ This is the repository for configuring your Adafruit Bonnet controller to the Ra
 
 With your
 * Raspberry Pi 5, (from the official Raspberry Pi website)
+  * with a MicroSD card at least 32-64GB, however a 128GB is recommended. 
 * Adafruit Bonnet Controller, (from the official Adafruit website)
 * 2 x 64*32 HUB 75 Displays, (from AliExpress) with display and power cords included
   * it helps to bolt them together first, (the long way, so that you get ONE giant 128*32 display).
@@ -30,7 +31,7 @@ However, we have links that are *required* for you to follow in order to get you
 
 Before we continue, it is important to know how to "SSH" into your Raspberry Pi which will allow you to use the Pi 5 terminal remotely using your computer.
 To do this, 
-* Follow the "*Raspberry Pi 5 Setup*" section in Step 1,
+* Follow the "*Raspberry Pi 5 Setup*" section in Step 1 ('Raspberry Pi OS Lite (64-bit)' is enough),
 * Connect your Pi to and HDMI monitor/TV,
 * Open the "Terminal" app and type in, either in Command Prompt, Powershell, or just Terminal, `ssh 192.168.[rest of your ip] -l pi`
 * The default password is `raspberry`. If you want increased security, change your password using `passwd pi` and type in a new password.
