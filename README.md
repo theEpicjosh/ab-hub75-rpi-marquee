@@ -42,3 +42,6 @@ To do this,
 
 4. After, type "`git clone https://github.com/theEpicjosh/ab-hub75-rpi-marquee/install-abmarquee.sh`" and type "`sudo ./install-abmarquee.sh`" (if that doesn't work, type `sudo chmod 755 ./install-abmarquee.sh` and type the previous command again.)
 5. Follow installer directions.
+
+# Concerns or questions?
+Go to the "Issues" tab and file a request. Thank you!
