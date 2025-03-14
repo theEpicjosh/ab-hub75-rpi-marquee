@@ -1,10 +1,5 @@
 #!/bin/bash
 
-#sudo rm /home/pi/.emulationstation/scripts/game-select/log.txt
-#echo "${1}, ${2}, ${3}, ${4}" >> /home/pi/.emulationstation/scripts/game-select/log.txt
-
-# GEN SCRIPT
-
 	new_name=${3}
 	newer_name=${3}
 
@@ -23,9 +18,7 @@
 	if [[ "${3}" =~ ^The[[:space:]]+(.+) ]]; then
 		newer_name="${BASH_REMATCH[1]}, The"
 	fi
-
-# END GEN SCRIPT
-
+ 
 # Remove temp python script, as will be mentioned later.
 sudo rm ~/.emulationstation/scripts/python/start.py
 sudo rm ~/.emulationstation/scripts/game-select/name.txt
@@ -53,19 +46,8 @@ elif not matching_files:
 	gif_file_pattern = \"/home/pi/.emulationstation/marquee_images/*/${small_name}.png\"
 	matching_files = glob.glob(gif_file_pattern)
 
-#elif not matching_files:
-#	gif_file_pattern = \"/home/pi/.emulationstation/marquee_images/*/${newer_name} *.png\"
-#	matching_files = glob.glob(gif_file_pattern)
-
-#elif not matching_files:
-#        gif_file_pattern = \"/home/pi/.emulationstation/marquee_images/*/*${newer_name}*.png\"
-#        matching_files = glob.glob(gif_file_pattern)
-
 elif not matching_files:
     print(\"No matching GIF found in path \" + gif_file_pattern + \"!\")
-#	gif_file_pattern = \"/home/pi/.emulationstation/marquee_images/*/retropie.png\"
-#	matching_files = glob.glob(gif_file_pattern)
-   #exit(1)  # Exit if no file is found
 
 gif_file = matching_files[0]  # Use the first matching file
 
