@@ -57,42 +57,16 @@ function installer() {
 
 }
 	sleep 1
-
-	IDESC="Installing Pixelcade Repository..."
-#	echo 0
-	ping -c 2 google.com
-#	cd ~/.emulationstation || exit 1
-
-#	echo 25
-	ping -c 2 google.com
-#	git clone https://github.com/alkine/pixelcade || exit 1
-
-#	echo 37
-	ping -c 2 google.com
-#	mv pixelcade marquee-images || exit 1
-
-	IDESC="Modifying files..."
-#	echo 50
-	ping -c 2 google.com
-#	cd marquee-images/system || exit 1
-#	cp default-gamecube.png default-gc.png || exit 1
-
-	IDESC="Installing Emulationstation Scripts..."
-#	echo 62
-	ping -c 2 google.com
-#	cd ~/.emulationstation || exit 1
-
-#	echo 75
-	ping -c 2 google.com
-#	git clone https://github.com/theEpicjosh/ab-hub75-rpi-marquee/marquee-scripts || exit 1
-
-#	echo 87
-	ping -c 2 google.com
-#	mv marquee-scripts scripts || exit 1
-
-#	echo 100
-	ping -c 2 google.com
-#	cd ~ || exit 1
+ 
+	cd ~/.emulationstation || exit 1
+	git clone https://github.com/alkine/pixelcade || exit 1
+	mv pixelcade marquee-images || exit 1
+	cd marquee-images/system || exit 1
+	cp default-gamecube.png default-gc.png || exit 1
+	cd ~/.emulationstation || exit 1
+	git clone https://github.com/theEpicjosh/ab-hub75-rpi-marquee/marquee-scripts || exit 1
+	mv marquee-scripts scripts || exit 1
+	cd ~ || exit 1
 
     	} | while IFS= read -r line; do
 		progress=$(echo "$line" | awk '{print $1}')
@@ -112,7 +86,7 @@ function installer() {
 	$IHEIGHT $IWIDTH
 	dia_st=$?
 
-if [ "$dia_st" -eq 0 ]; then read -p "Yes."
+if [ "$dia_st" -eq 0 ]; then sudo reboot
 	fi
 }
 
