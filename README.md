@@ -2,7 +2,7 @@
 Retropie Marquee for the Adafruit Bonnet and the 128x32 HUB75 displays
 
 # DISCLAIMER
-There are no files in this repository. You may follow the rest of the directions and setup the Python scripts yourself using the [Pixelcade Image Repository](https://github.com/alinke/pixelcade). However, with the installer expected to come, it should install all of the scripts required for the marquee display for you, but that is for later.
+There is no installer in this repository. You may follow the rest of the directions and setup the Python scripts yourself using the [Pixelcade Image Repository](https://github.com/alinke/pixelcade). However, with the installer expected to come, it should install all of the scripts required for the marquee display for you, but that is for later.
 
 # What is this?
 This is the repository for configuring your Adafruit Bonnet controller to the Raspberry Pi / Retropie along with the HUB75 displays.
