@@ -40,7 +40,5 @@ To do this,
 
 2. For the same reason and because the RetroPie repositories for pre-made images has not been updated since 2022, it is also required to manually install the software yourself. To do so, follow [this guide](https://retropie.org.uk/docs/Manual-Installation/).
 
-3. Make sure you install the GitHub CLI (`gh`) interface by running "`curl -sS https://webi.sh/gh | sh`".
-
-4. After, type "`gh repo clone theEpicjosh/ab-hub75-rpi-marquee`" and type "`sudo ./install-abmarquee.sh`" (if that doesn't work, type `sudo chmod 755 ./install-abmarquee.sh` and type the previous command again.)
+4. After, type "`git clone https://github.com/theEpicjosh/ab-hub75-rpi-marquee`" and type "`sudo ./install-abmarquee.sh`" (if that doesn't work, type `sudo chmod 755 ./install-abmarquee.sh` and type the previous command again.)
 5. Follow installer directions.
