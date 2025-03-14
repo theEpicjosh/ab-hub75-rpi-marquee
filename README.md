@@ -32,8 +32,8 @@ However, we have links that are *required* for you to follow in order to get you
 Before we continue, it is important to know how to "SSH" into your Raspberry Pi which will allow you to use the Pi 5 terminal remotely using your computer.
 To do this, 
 * Follow the "*Raspberry Pi 5 Setup*" section in Step 1 ('Raspberry Pi OS Lite (64-bit)' is enough),
-* Connect your Pi to and HDMI monitor/TV,
-* Open the "Terminal" app and type in, either in Command Prompt, Powershell, or just Terminal, `ssh 192.168.[rest of your ip] -l pi`
+* Connect your Pi to and HDMI monitor/TV and keep note of the IP address on the top of the screen,
+* Open the "Terminal" app on your host machine and type in, either in Command Prompt, Powershell, or just Terminal, `ssh 192.168.[rest of your ip] -l pi`
 * The default password is `raspberry`. If you want increased security, change your password using `passwd pi` and type in a new password.
 
 1. Because this is a Raspberry Pi 5 and this is relatively new hardware at the time of writing this, there is no installer for the Adafruit Bonnet drivers for the Pi 5, it is required to manually install the software yourself. To do so, follow [this guide](https://learn.adafruit.com/rgb-matrix-panels-with-raspberry-pi-5/raspberry-pi-5-setup) (just the page is good enough). For convenience, the environment is also called `blinka_venv`. Make sure you name it this *exactly*.
