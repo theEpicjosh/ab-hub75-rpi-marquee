@@ -54,8 +54,7 @@ function installer() {
 	IDESC="Installing drivers..."
 	IHEIGHT=10
 	IWIDTH=50
-
-}
+{
 	sleep 1
  
 	cd ~/.emulationstation || exit 1
