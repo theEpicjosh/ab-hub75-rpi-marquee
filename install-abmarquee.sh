@@ -63,7 +63,7 @@ function installer() {
 	cd marquee-images/console || exit 1
 	cp default-gamecube.png default-gc.png || exit 1
 	cd ~/.emulationstation || exit 1
-	mv ~/ab-hub75-rpi-marquee/marquee-scripts scripts || exit 1
+	mv ~/ab-hub75-rpi-marquee/marquee-scripts ~/.emulationstation/scripts || exit 1
 	cd ~ || exit 1
 
     	} | while IFS= read -r line; do
