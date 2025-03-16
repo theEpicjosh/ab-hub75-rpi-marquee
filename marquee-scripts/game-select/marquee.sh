@@ -21,7 +21,6 @@
  
 # Remove temp python script, as will be mentioned later.
 sudo rm ~/.emulationstation/scripts/python/start.py
-sudo rm ~/.emulationstation/scripts/game-select/name.txt
 
 # Write python script with modified BASH-only variable to a new file.
 echo "import glob
