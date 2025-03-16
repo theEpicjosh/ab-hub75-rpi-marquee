@@ -69,7 +69,5 @@ with Image.open(gif_file) as img:
             matrix.show()
             time.sleep(0.1)" >> ~/.emulationstation/scripts/python/start.py # Save python script, as mentioned earlier
 
-echo ${newer_name} >> ~/.emulationstation/scripts/game-select/name.txt
-
 # Run python script, displaying the image.
 /home/pi/venvs/blinka_venv/bin/python /home/pi/.emulationstation/scripts/python/start.py &
