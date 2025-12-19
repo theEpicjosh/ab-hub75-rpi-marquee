@@ -59,7 +59,7 @@ function installer() {
  
 	cd ~/.emulationstation || exit 1
 	git clone https://github.com/alinke/pixelcade.git || exit 1
-	mv pixelcade marquee-images || exit 1
+	mv pixelcade marquee_images || exit 1
 	cd marquee-images/console || exit 1
 	cp default-gamecube.png default-gc.png || exit 1
 	cd ~/.emulationstation || exit 1
